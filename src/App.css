@@ -1,0 +1,332 @@
+.App {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffff; /* или любой другой цвет */
+}
+
+.footer .img,
+.footer .img1,
+.footer .img2,
+.footer .img3 {
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer .img:hover,
+.footer .img1:hover,
+.footer .img2:hover,
+.footer .img3:hover {
+  transform: scale(1.1);
+}
+
+.niz {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px; /* Примерно 2 пробела */
+}
+
+.footer .img,
+.footer .img1,
+.footer .img2,
+.footer .img3 {
+  margin: 0; /* убрать отступы */
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer .img,
+  .footer .img1,
+  .footer .img2,
+  .footer .img3 {
+    width: 40px; /* уменьшение иконок на маленьких экранах */
+  }
+
+  .footer img[alt="apply"],
+  .footer img[alt="main"] {
+    width: 200px;
+  }
+}
+
+
+.header {
+  width: 100%;
+  background-color: #ffff;
+  padding: 10px 20px;
+  box-shadow: none;
+}
+
+
+/* Сброс базовых отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #fff; /* или нужный тебе фон */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  max-width: 100%;
+  width: 950px; /* или любое нужное значение */
+  height: auto;
+}
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Georgia', serif;
+}
+
+.form-img__lock {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+header,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main h1,
+main h2 {
+  margin-top: 0;
+}
+
+
+.main-content {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.img-large {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  padding-top: 90px;
+}
+
+.img-small {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+.makeup-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.makeup-content {
+  max-width: 600px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.makeup-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .makeup-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .makeup-img {
+    max-width: 100%;
+  }
+}
+
+
+.hear-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hear-content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 20px;
+}
+
+.hear-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .hear-content {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .hear-img {
+    max-width: 100%;
+  }
+}
+
+.manicure-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.manicure-content {
+  max-width: 600px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.manicure-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .manicure-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .manicure-img {
+    max-width: 100%;
+  }
+}
+
+
+.pedicure-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pedicure-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif; /* заменили arialic на Arial — Arialic это несуществующий стандартный шрифт */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 10px;
+}
+
+.pedicure-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .pedicure-content {
+    font-size: 16px;
+  }
+
+  .pedicure-img {
+    max-width: 100%;
+  }
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.portfolio-content {
+  max-width: 600px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+  color: #333;
+  padding: 10px;
+}
+
+.portfolio-content h2 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .portfolio-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+
+.img-large {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  padding-top: 90px;
+  transition: transform 0.3s ease;
+}
+
+.img-large:hover {
+  transform: scale(1.05);
+}
